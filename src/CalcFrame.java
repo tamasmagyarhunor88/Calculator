@@ -187,6 +187,11 @@ public class CalcFrame extends javax.swing.JFrame {
 
         btnResult.setFont(new java.awt.Font("Lucida Grande", 0, 48)); // NOI18N
         btnResult.setText("=");
+        btnResult.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResultActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -271,11 +276,12 @@ public class CalcFrame extends javax.swing.JFrame {
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btnZero, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btnDot, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnPlus, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnResult, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
@@ -380,6 +386,21 @@ public class CalcFrame extends javax.swing.JFrame {
         String Enternumber = txtDisplay.getText()+btnOne.getText();
         txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnOneActionPerformed
+
+    private void btnResultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResultActionPerformed
+        // TODO add your handling code here:
+        secondnum=Integer.parseInt(txtDisplay.getText());
+        if(operations.equals("+"))
+            result = firstnum+secondnum;
+        if(operations.equals("-"))
+            result = firstnum-secondnum;
+        if(operations.equals("*"))
+            result = firstnum*secondnum;
+        if(operations.equals("/"))
+            result = firstnum/secondnum;
+        
+        txtDisplay.setText(result+ " ");
+    }//GEN-LAST:event_btnResultActionPerformed
 
     /**
      * @param args the command line arguments
