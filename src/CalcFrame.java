@@ -16,7 +16,12 @@ public class CalcFrame extends javax.swing.JFrame {
     public CalcFrame() {
         initComponents();
     }
-
+public class JavaCalculator extends javax.swing.JFrame {
+    int firstnum;
+    int secondnum;
+    int result;
+    String operations;
+}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -55,6 +60,11 @@ public class CalcFrame extends javax.swing.JFrame {
 
         btnOne.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnOne.setText("1");
+        btnOne.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOneActionPerformed(evt);
+            }
+        });
 
         btnTwo.setFont(new java.awt.Font("Lucida Grande", 1, 13)); // NOI18N
         btnTwo.setText("2");
@@ -335,6 +345,10 @@ public class CalcFrame extends javax.swing.JFrame {
     private void btnDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivideActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDivideActionPerformed
+
+    private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnOneActionPerformed
 
     /**
      * @param args the command line arguments
