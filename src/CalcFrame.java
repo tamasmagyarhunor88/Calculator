@@ -16,12 +16,11 @@ public class CalcFrame extends javax.swing.JFrame {
     public CalcFrame() {
         initComponents();
     }
-public class JavaCalculator extends javax.swing.JFrame {
-    int firstnum;
+       
+    int firstnum; 
     int secondnum;
     int result;
     String operations;
-}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -300,7 +299,7 @@ public class JavaCalculator extends javax.swing.JFrame {
 
     private void btnFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFourActionPerformed
         // TODO add your handling code here:
-        String Enternumber = txtDisplay.getText()+btnThree.getText();
+        String Enternumber = txtDisplay.getText()+btnFour.getText();
         txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnFourActionPerformed
 
@@ -350,18 +349,30 @@ public class JavaCalculator extends javax.swing.JFrame {
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinusActionPerformed
         // TODO add your handling code here:
+        firstnum= Integer.parseInt(txtDisplay.getText());
+        txtDisplay.setText("");
+        operations="-";
     }//GEN-LAST:event_btnMinusActionPerformed
 
     private void btnMultipleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultipleActionPerformed
         // TODO add your handling code here:
+        firstnum= Integer.parseInt(txtDisplay.getText());
+        txtDisplay.setText("");
+        operations="*";
     }//GEN-LAST:event_btnMultipleActionPerformed
 
     private void btnPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusActionPerformed
         // TODO add your handling code here:
+        firstnum= Integer.parseInt(txtDisplay.getText());
+        txtDisplay.setText("");
+        operations="+";
     }//GEN-LAST:event_btnPlusActionPerformed
 
     private void btnDivideActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivideActionPerformed
         // TODO add your handling code here:
+        firstnum= Integer.parseInt(txtDisplay.getText());
+        txtDisplay.setText("");
+        operations="/";
     }//GEN-LAST:event_btnDivideActionPerformed
 
     private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
