@@ -347,6 +347,8 @@ public class CalcFrame extends javax.swing.JFrame {
 
     private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
         // TODO add your handling code here:
+//        String Enterdot = txtDisplay.getText()+btnDot.getText();
+//        txtDisplay.setText(Enterdot);
     }//GEN-LAST:event_btnDotActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
