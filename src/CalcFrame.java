@@ -288,38 +288,56 @@ public class JavaCalculator extends javax.swing.JFrame {
 
     private void btnTwoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTwoActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnTwo.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnTwoActionPerformed
 
     private void btnThreeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThreeActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnThree.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnThreeActionPerformed
 
     private void btnFourActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFourActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnThree.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnFourActionPerformed
 
     private void btnNineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNineActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnNine.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnNineActionPerformed
 
     private void btnFiveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFiveActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnFive.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnFiveActionPerformed
 
     private void btnEightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEightActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnEight.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnEightActionPerformed
 
     private void btnSevenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSevenActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnSeven.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnSevenActionPerformed
 
     private void btnSixActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSixActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnSix.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnSixActionPerformed
 
     private void btnZeroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnZeroActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnZero.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnZeroActionPerformed
 
     private void btnDotActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDotActionPerformed
@@ -348,6 +366,8 @@ public class JavaCalculator extends javax.swing.JFrame {
 
     private void btnOneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOneActionPerformed
         // TODO add your handling code here:
+        String Enternumber = txtDisplay.getText()+btnOne.getText();
+        txtDisplay.setText(Enternumber);
     }//GEN-LAST:event_btnOneActionPerformed
 
     /**
