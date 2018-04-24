@@ -351,6 +351,8 @@ public class CalcFrame extends javax.swing.JFrame {
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
         // TODO add your handling code here:
+        secondnum = 0;
+        txtDisplay.setText("");
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMinusActionPerformed
